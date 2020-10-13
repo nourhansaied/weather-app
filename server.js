@@ -40,5 +40,6 @@ function addWeatherInfo(req, res) {
     projectData['date'] = req.body.date;
     projectData['temperature'] = req.body.temp;
     projectData['user-response'] = req.body.content;
+    projectData['extra'] = req.body.extraData;
     res.send(projectData);
 }

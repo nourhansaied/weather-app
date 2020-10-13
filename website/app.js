@@ -15,7 +15,7 @@ function getInitialData(e) {
         .then(function (UWData) {
             // add data to POST request
              newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
-            postData('/add', { date: newDate, temp: UWData['main'].temp, UserContent })
+            postData('/add', { date: newDate, temp: UWData['main'].temp, UserContent,extra:UWData })
         }).then(function (newData) {
         // call updateUI to update browser content
         updateUserUI()
@@ -30,6 +30,7 @@ const getInitWeather = async (baseURL, zipCode, apiKey) => {
     try {
         return await res.json();
     } catch (error) {
+        document.getElementById('no-data').innerHTML = error
         console.log("error", error);
     }
 }
@@ -45,7 +46,8 @@ const postData = async (url = '', data = {}) => {
         body: JSON.stringify({
             date: data.date,
             temp: data.temp,
-            content: data.UserContent
+            content: data.UserContent,
+            extraData: data.extra
         })
     })
 
@@ -61,13 +63,26 @@ const updateUserUI = async () => {
     const request = await fetch('/all');
     try {
         const allData = await request.json()
-        // show icons on the page
-        // icons.forEach(icon => icon.style.opacity = '1');
         // update new entry values
-        console.log(allData)
-        document.getElementById('date').innerHTML = allData.date;
-        document.getElementById('temp').innerHTML = allData.temperature;
-        document.getElementById('content').innerHTML = allData['user-response'];
+
+        let img = document.createElement('img');
+        let container = document.createElement('div');
+        container.classList.add('extra-data');
+        let desc = document.createElement('p');
+        let tit = document.createElement('h5');
+        desc.innerHTML = allData.extra.weather[0].description;
+        tit.innerHTML = allData.extra.weather[0].main;
+
+        img.setAttribute('src',' http://openweathermap.org/img/wn/'+allData.extra.weather[0].icon+'@2x.png')
+        container.append(tit)
+        container.appendChild(desc)
+
+        document.getElementById('date').innerHTML =  document.getElementById('date').innerHTML + allData.date;
+        document.getElementById('preview').appendChild(container)
+        document.getElementById('preview').appendChild(img)
+        document.getElementById('city').innerHTML =  'City: ' + allData.extra.name;
+        document.getElementById('temp').innerHTML = document.getElementById('temp').innerHTML + allData.temperature;
+        document.getElementById('content').innerHTML = document.getElementById('content').innerHTML + allData['user-response'];
     }
     catch (error) {
         console.log("error", error);

@@ -1,35 +1,161 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Weather Journal</title>
-<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/iconfont.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+  <!--Theme Responsive css-->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+<!--  <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+
 </head>
- <body>
-<div id = "app">
-  <div class ="holder headline">
-    Weather Journal App
+<body data-spy="scroll" data-target=".navbar-collapse">
+<!-- Preloader -->
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div class="object" id="object_one"></div>
+      <div class="object" id="object_two"></div>
+      <div class="object" id="object_three"></div>
+      <div class="object" id="object_four"></div>
+    </div>
   </div>
-  <div class ="holder zip">
-    <label for="zip">Enter Zipcode here</label>
-    <input type="text" id="zip" placeholder="enter zip code here">
-  </div>
-  <div class ="holder feel">
-    <label for="feelings">How are you feeling today?</label>
-    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
-    <button id="generate" type = "submit"> Generate </button>
-  </div>
-  <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
-  </div>
-  </div>
-  </div>
+</div><!--End off Preloader -->
+<div class="culmn">
+  <!--Home page style-->
+
+
+  <nav class="navbar navbar-default bootsnav navbar-fixed white no-background">
+    <div class="container">
+
+      <!-- Start Atribute Navigation -->
+      <div class="attr-nav">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <!-- End Atribute Navigation -->
+
+
+      <!-- Start Header Navigation -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#brand">
+          <span>Weather App</span>
+        </a>
+
+      </div>
+      <!-- End Header Navigation -->
+
+      <!-- navbar menu -->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-center">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#weather-app">Features</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <!--Home Sections-->
+
+  <section id="home" class="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="main_home">
+          <div class="col-md-6">
+            <div class="home_text">
+              <h4 class="text-white">Get the most fun weather app</h4>
+            </div>
+            <div  id="weather-app">
+              <div class="content">
+                <div class="half">
+                  <div class="holder zip">
+                    <label for="zip">
+                      <input type="text" id="zip" placeholder=" " class="form-control" >
+                      <span>Enter Zipcode here</span>
+                    </label>
+                  </div>
+                  <div class="holder feel">
+                    <label for="feelings">
+                      <textarea  class="myInput form-control" id="feelings" placeholder=" " rows="5"
+                      cols="50"></textarea>
+                      <span>How are you feeling today?</span>
+                    </label>
+                  </div>
+                </div>
+                <button id="generate" class="btn  btn-lg btn-primary" type="submit"> Generate</button>
+              </div>
+              <div class="holder entry">
+                <div class="title">Most Recent Entry</div>
+                <div id="city">
+
+                </div>
+                <div id="entryHolder">
+
+                  <div id="date">
+                    <span>Day:</span>
+                  </div>
+                  <div id="temp">
+                    <span>Temperature:</span>
+                  </div>
+                  <div id="content">
+                   <span class="item"> Feelings:</span>
+                  </div>
+                  <div id="preview">
+
+                  </div>
+                </div>
+              </div>
+              <h4 class="no-data"></h4>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="phone_one phone_attr1 text-center sm-m-top-50">
+              <div class="attr_deg">9&deg;</div>
+              <div class="attr_rio text-uppercase">Rio</div>
+              <div class="attr_sun text-uppercase text-white">Sunny</div>
+              <div class="attr_lon text-uppercase text-white">London</div>
+              <img src="assets/images/phone01.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+      </div><!--End off row-->
+    </div><!--End off container -->
+  </section> <!--End off Home Sections-->
+
+</div>
+<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+
+<script src="assets/js/jquery.magnific-popup.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/jquery.collapse.js"></script>
+<script src="assets/js/bootsnav.js"></script>
+
+
+
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
 <script src="app.js" type="text/javascript"></script>
+
 
 </body>
 </html>

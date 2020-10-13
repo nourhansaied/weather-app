@@ -1,88 +1,117 @@
 body{
-    background: #fffff8;
+    background: white;
+    margin: 0;
+    box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
+#weather-app{
+    padding: 5rem 1rem;
     height:100vh;
-    background: #f23557;
     color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
-.holder{
 
-}
-
-.entry{
-    background: rgba(59, 74, 107, .4);
-}
-
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
-}
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
-}
 
 input{
     display:block;
     height: 60px;
     width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
+    background:white;
+    border-radius: 8px;
+    color: #000;
+    font-size: 16px;
     font-family: 'Oswald', sans-serif;
     border: none;
+    padding:10px;
+    font-weight: 400;
+}
+label {
+    margin:20px 0;
+    position:relative;
+    display:inline-block;
+    width: 100%;
 }
 
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
+span {
+    padding:10px;
+    pointer-events: none;
+    position:absolute;
+    left:0;
+    top:-5px;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+}
+.navbar-brand span {
+    width: 200px;
+    top: 20px;
+}
+.half {
+    width: 50%
+}
+.title {
+    color: white;
+    padding: 1rem;
+}
+#entryHolder {
+    display: flex;
+    /*align-items: center;*/
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+    padding: 1rem 0 0 3rem;
+
+}
+#entryHolder div {
+    margin-bottom: 1rem;
+    min-width: 80px;
+}
+#entryHolder div span {
+    display: inline-block;
+    min-width: 120px;
+    color: #fcec64;
+    opacity: 1;
+    position: relative;
+}
+#city {
+    padding: 1.5rem;
+    color: #fcec64;
+}
+
+#preview {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.extra-data {
+    display: flex;
+    flex-direction: column;
 }
 h1{
     font-size: 36px;
 }
-
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 textarea{
     background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
+    color: #000;
+    font-size: 14px;
     font-family: 'Oswald', sans-serif;
+    padding:10px;
+    resize: none;
+    font-weight: 400;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
@@ -93,19 +122,40 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+    color: #000;
     font-family: 'Oswald', sans-serif;
 
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+    color: #000;
     font-family: 'Oswald', sans-serif;
 
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+    color: #000;
     font-family: 'Oswald', sans-serif;
 
-} 
+}
+
+input:focus + span, input:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+/* For IE Browsers*/
+input:focus + span, input:not(:-ms-input-placeholder) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+textarea:focus + span, textarea:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+/* For IE Browsers*/
+textarea:focus + span, textarea:not(:-ms-input-placeholder) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}

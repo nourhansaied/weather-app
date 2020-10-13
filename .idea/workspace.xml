@@ -1,16 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ea80878-10bb-47bb-abcb-f1151730918a" name="Default Changelist" comment="" />
+    <list default="true" id="1ea80878-10bb-47bb-abcb-f1151730918a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/website/assets/images/phone1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/bootsnav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/gmaps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/isotope.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.countdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.easing.1.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.easypiechart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/jquery-1.11.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1inWNDSHZpKhpjMB3xzBe0zXdui" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,9 +63,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/website" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/The Weather Journal FWD/website/index.html" useBuiltInWebServerPort="true">
@@ -40,11 +90,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602543794172</updated>
-      <workItem from="1602543795387" duration="5252000" />
+      <workItem from="1602543795387" duration="5884000" />
+      <workItem from="1602579747475" duration="27000" />
+      <workItem from="1602615330675" duration="5752000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="567" y="254" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602619451005">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="567" y="254" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1602619451005" />
   </component>
 </project>
