@@ -1,6 +1,7 @@
 /* Global Variables */
-let baseURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-let apiKey = '&appid=87d66b5a74fe3f0994a7f1a2688610af';
+const baseURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
+const apiKey = '&appid=87d66b5a74fe3f0994a7f1a2688610af&units=imperial';
+
 // Create a new date instance dynamically with JS
 let d = new Date();
 let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
@@ -65,9 +66,11 @@ const updateUserUI = async () => {
         const allData = await request.json()
         // update new entry values
 
-        let img = document.createElement('img');
+        document.getElementById('preview').innerHTML = '';
         let container = document.createElement('div');
         container.classList.add('extra-data');
+        let img = document.createElement('img');
+
         let desc = document.createElement('p');
         let tit = document.createElement('h5');
         desc.innerHTML = allData.extra.weather[0].description;
@@ -77,12 +80,12 @@ const updateUserUI = async () => {
         container.append(tit)
         container.appendChild(desc)
 
-        document.getElementById('date').innerHTML =  document.getElementById('date').innerHTML + allData.date;
+        document.getElementById('date').innerHTML =  'date: ' + allData.date;
         document.getElementById('preview').appendChild(container)
         document.getElementById('preview').appendChild(img)
         document.getElementById('city').innerHTML =  'City: ' + allData.extra.name;
-        document.getElementById('temp').innerHTML = document.getElementById('temp').innerHTML + allData.temperature;
-        document.getElementById('content').innerHTML = document.getElementById('content').innerHTML + allData['user-response'];
+        document.getElementById('temp').innerHTML = 'Temp: '+ allData.temperature;
+        document.getElementById('content').innerHTML = 'Feelings: '+ allData['user-response'];
     }
     catch (error) {
         console.log("error", error);

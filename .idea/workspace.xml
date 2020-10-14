@@ -20,28 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ea80878-10bb-47bb-abcb-f1151730918a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/website/assets/images/phone1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/bootsnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/gmaps.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/isotope.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.accordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.easing.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.easypiechart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/jquery.magnific-popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/jquery-1.11.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/assets/js/vendor/npm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +73,8 @@
       <updated>1602543794172</updated>
       <workItem from="1602543795387" duration="5884000" />
       <workItem from="1602579747475" duration="27000" />
-      <workItem from="1602615330675" duration="5752000" />
+      <workItem from="1602615330675" duration="6070000" />
+      <workItem from="1602667519493" duration="1729000" />
     </task>
     <servers />
   </component>
