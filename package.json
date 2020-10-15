@@ -1,14 +1,8 @@
 {
-  "name": "express",
+  "name": "weather",
   "version": "1.0.0",
   "description": "## Overview This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI.  - Make sure you have the internet is working and have a browser engine then run  - For developer make sure that you installed the required npm packages",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "module": "^1.2.5"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -22,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/nourhansaied/weather-app/issues"
   },
-  "homepage": "https://github.com/nourhansaied/weather-app#readme"
+  "homepage": "https://github.com/nourhansaied/weather-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
